@@ -1,3 +1,4 @@
+import 'package:bookly_app1/core/utils/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,8 +12,10 @@ class Bookly extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      home: SplashView(),
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: MyThemeData.lightMode,
+      home: const SplashView(),
     );
   }
 }
