@@ -1,8 +1,7 @@
 import 'package:bookly_app1/core/utils/themes.dart';
+import 'package:bookly_app1/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'features/splash/presentation/view models/views/splash_view.dart';
 
 void main(){
   runApp(const Bookly());
@@ -15,7 +14,7 @@ class Bookly extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: MyThemeData.darkMode,
-      home: const SplashView(),
+      home: const HomeView(),
     );
   }
 }

@@ -8,8 +8,10 @@ class MyThemeData {
     scaffoldBackgroundColor: ColorResources.primaryColor,
 
         textTheme: TextTheme(
-          titleSmall: GoogleFonts.alice(
-            fontSize: 15,
+          titleMedium: GoogleFonts.montserrat(
+            fontSize: 20,
+            fontWeight: FontWeight.w700,
+            color: ColorResources.white
 
           )
   )
