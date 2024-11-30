@@ -22,4 +22,6 @@ class SlidingText extends StatelessWidget {
           );
         });
   }
+
+
 }
