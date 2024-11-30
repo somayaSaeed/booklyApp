@@ -6,15 +6,26 @@ class MyThemeData {
   static final ThemeData darkMode = ThemeData.dark().copyWith(
     primaryColor: ColorResources.primaryColor,
     scaffoldBackgroundColor: ColorResources.primaryColor,
-
-        textTheme: TextTheme(
-          titleMedium: GoogleFonts.montserrat(
-            fontSize: 20,
-            fontWeight: FontWeight.w700,
-            color: ColorResources.white
-
-          )
-  )
-
+    textTheme: TextTheme(
+        titleMedium: GoogleFonts.montserrat(
+          fontSize: 22,
+          fontWeight: FontWeight.w700,
+          color: ColorResources.white,
+        ),
+        bodyLarge: GoogleFonts.montserrat(
+          fontSize: 20,
+          fontWeight: FontWeight.w500,
+          color: ColorResources.white,
+        ),
+        bodyMedium: GoogleFonts.montserrat(
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
+          color: ColorResources.grey,
+        ),
+        bodySmall: GoogleFonts.montserrat(
+          fontSize: 17,
+          fontWeight: FontWeight.w900,
+          color: ColorResources.white,
+        )),
   );
 }
