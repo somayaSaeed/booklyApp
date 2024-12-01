@@ -16,7 +16,7 @@ class BookDetailsSection extends StatelessWidget {
         const CustomBookDetailsAppBar(),
         Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: Constant.getWidth(context) * .25,
+            horizontal: Constant.getWidth(context) * .28,
             vertical: Constant.getHeight(context) * .03,
           ),
           child: const CustomBookItem(),
