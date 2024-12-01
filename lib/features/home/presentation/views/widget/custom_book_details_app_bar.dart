@@ -9,28 +9,31 @@ class CustomBookDetailsAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        IconButton(
-          onPressed: () {
-            GoRouter.of(context).pop(AppRouter.kHomeView);
-          },
-          icon: const Icon(
-            Icons.close,
-            size: 30,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 13),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          IconButton(
+            onPressed: () {
+              GoRouter.of(context).pop(AppRouter.kHomeView);
+            },
+            icon: const Icon(
+              Icons.close,
+              size: 30,
+            ),
+            color: ColorResources.white,
           ),
-          color: ColorResources.white,
-        ),
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.shopping_cart_outlined,
-            size: 30,
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.shopping_cart_outlined,
+              size: 30,
+            ),
+            color: ColorResources.white,
           ),
-          color: ColorResources.white,
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
