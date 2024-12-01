@@ -12,6 +12,11 @@ class MyThemeData {
           fontWeight: FontWeight.w700,
           color: ColorResources.white,
         ),
+        titleLarge: GoogleFonts.montserrat(
+          fontSize: 28,
+          fontWeight: FontWeight.w800,
+          color: ColorResources.white,
+        ),
         bodyLarge: GoogleFonts.montserrat(
           fontSize: 20,
           fontWeight: FontWeight.w500,
@@ -26,6 +31,11 @@ class MyThemeData {
           fontSize: 17,
           fontWeight: FontWeight.w900,
           color: ColorResources.white,
+        ),
+        titleSmall: GoogleFonts.montserrat(
+          fontSize: 17,
+          fontWeight: FontWeight.w500,
+          color: Colors.black87,
         )),
   );
 }

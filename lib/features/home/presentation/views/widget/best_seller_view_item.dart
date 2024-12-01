@@ -64,7 +64,9 @@ class BestSellerViewItem extends StatelessWidget {
                           '19.99 €',
                           style: Theme.of(context).textTheme.bodySmall,
                         ),
-                        const BookRating()
+                         const BookRating(
+                           
+                         )
                       ],
                     )
                   ],
