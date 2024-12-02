@@ -65,7 +65,7 @@ class BestSellerViewItem extends StatelessWidget {
                           style: Theme.of(context).textTheme.bodySmall,
                         ),
                          const BookRating(
-                           
+
                          )
                       ],
                     )
@@ -74,6 +74,7 @@ class BestSellerViewItem extends StatelessWidget {
               )
             ],
           ),
+
         ),
       ),
     );
