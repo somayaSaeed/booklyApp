@@ -19,7 +19,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CustomAppBar(),
+               const CustomAppBar(),
                 const FeaturedBooksListView(),
                 const SizedBox(
                   height: 15,
@@ -27,7 +27,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Best Seller',
+                    'Recommended',
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
@@ -37,8 +37,11 @@ class _HomeViewBodyState extends State<HomeViewBody> {
         const SliverToBoxAdapter(
           child: BestSellerListView()
           ,
-        )
+        ),
+        
+
       ],
+
     );
 
   }

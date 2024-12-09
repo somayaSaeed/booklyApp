@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../splash/presentation/views/widget/search_result.dart';
+import '../../../../../splash/presentation/views/widget/search_result.dart';
 import 'custom_search_text_view.dart';
 
 class SearchViewBody extends StatelessWidget {
@@ -19,7 +18,7 @@ class SearchViewBody extends StatelessWidget {
         ),
         SliverToBoxAdapter(
           child:   Padding(
-            padding: const EdgeInsets.all(15),
+            padding: const EdgeInsets.symmetric(horizontal: 15 ),
             child: Text(
               'Search Result',
               style: Theme.of(context).textTheme.titleMedium,

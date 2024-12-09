@@ -11,4 +11,9 @@ class ColorResources {
 
   static Color get grey => const Color(0xFF9e9ba4);
 
+
+  static Color get darkGrey => const Color(0x323a2f5c);
+
 }
+
+

@@ -1,18 +1,25 @@
 import 'package:bookly_app1/core/utils/app_routes.dart';
+import 'package:bookly_app1/features/home/presentation/views/widget/save_item.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../../core/utils/assets.dart';
 import 'book_rating.dart';
 
-class BestSellerViewItem extends StatelessWidget {
-  const BestSellerViewItem({super.key});
+class RecommendedViewItem extends StatefulWidget {
+  const RecommendedViewItem({super.key});
+
+  @override
+  State<RecommendedViewItem> createState() => _RecommendedViewItemState();
+}
+
+class _RecommendedViewItemState extends State<RecommendedViewItem> {
+  bool isSelected = true;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         GoRouter.of(context).push(AppRouter.kBookDetailsView);
-
       },
       child: SizedBox(
         height: 150,
@@ -22,17 +29,22 @@ class BestSellerViewItem extends StatelessWidget {
             children: [
               AspectRatio(
                 aspectRatio: 2.6 / 4,
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    image: const DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage(
-                        AssetsData.movie,
+                child: Stack(children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(5),
+                      image: const DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage(
+                          AssetsData.movie,
+                        ),
                       ),
                     ),
                   ),
-                ),
+                  const SaveItem(),
+
+
+                ]),
               ),
               const SizedBox(
                 width: 30,
@@ -64,9 +76,7 @@ class BestSellerViewItem extends StatelessWidget {
                           '19.99 €',
                           style: Theme.of(context).textTheme.bodySmall,
                         ),
-                         const BookRating(
-
-                         )
+                        const BookRating()
                       ],
                     )
                   ],
@@ -74,10 +84,8 @@ class BestSellerViewItem extends StatelessWidget {
               )
             ],
           ),
-
         ),
       ),
     );
   }
 }
-
