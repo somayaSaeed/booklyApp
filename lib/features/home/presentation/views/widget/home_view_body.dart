@@ -25,7 +25,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                   height: 15,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 20 , vertical:  12),
                   child: Text(
                     'Recommended',
                     style: Theme.of(context).textTheme.titleMedium,
@@ -35,7 +35,10 @@ class _HomeViewBodyState extends State<HomeViewBody> {
             )
         ),
         const SliverToBoxAdapter(
-          child: BestSellerListView()
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
+            child: BestSellerListView(),
+          )
           ,
         ),
         

@@ -4,19 +4,27 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/utils/color_resources.dart';
 import '../../../../../home/presentation/views/widget/best_seller_view_item.dart';
 
-class SavedBooksBody extends StatelessWidget {
+class SavedBooksBody extends StatefulWidget {
   const SavedBooksBody({super.key});
 
+  @override
+  State<SavedBooksBody> createState() => _SavedBooksBodyState();
+}
+
+class _SavedBooksBodyState extends State<SavedBooksBody> {
   @override
   Widget build(BuildContext context) {
     return const CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-          child: Column(
-            children: [
-              CustomSavedBooksAppBar(),
-              SavedBooksListView(),
-            ],
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15 ),
+            child: Column(
+              children: [
+                CustomSavedBooksAppBar(),
+                SavedBooksListView(),
+              ],
+            ),
           ),
         )
       ],

@@ -28,10 +28,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
           icon: Icon(Icons.mark_chat_read_outlined),
           label: "Saved Books",
         ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.person),
-          label: "Profile",
-        ),
+
       ],
     );
   }
